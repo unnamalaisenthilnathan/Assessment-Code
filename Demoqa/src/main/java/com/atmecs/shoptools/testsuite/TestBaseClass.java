@@ -1,4 +1,4 @@
-package com.atmecs.testsuite;
+package com.atmecs.shoptools.testsuite;
 import java.io.File;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
@@ -8,11 +8,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
-
-import com.atmecs.constants.ProjectPathConstants;
-import com.atmecs.logreports.LogReportInformation;
-
-import com.atmecs.util.PropertiesUtil;
+import com.atmecs.atmecs.logreports.LogReportInformation;
+import com.atmecs.shoptools.constants.ProjectPathConstants;
+import com.atmecs.shoptools.util.PropertiesUtil;
 
 
 

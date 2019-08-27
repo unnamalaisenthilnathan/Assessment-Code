@@ -2,7 +2,7 @@ package com.atmecs.shoptools.locatorspath;
 
 
 
-import com.atmecs.testsuite.TestBaseClass;
+import com.atmecs.shoptools.testsuite.TestBaseClass;
 
 public class LocatorsPath extends TestBaseClass {
 	//ordering

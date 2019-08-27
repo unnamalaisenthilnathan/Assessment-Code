@@ -1,4 +1,4 @@
-package com.atmecs.constants;
+package com.atmecs.shoptools.constants;
 
 import java.io.File;
 

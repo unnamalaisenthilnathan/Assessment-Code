@@ -1,9 +1,9 @@
-package com.atmecs.logreports;
+package com.atmecs.atmecs.logreports;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
-import com.atmecs.constants.ProjectPathConstants;
+import com.atmecs.shoptools.constants.ProjectPathConstants;
 
 public class LogReportInformation {
 	Logger logger = null;

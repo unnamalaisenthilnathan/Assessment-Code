@@ -1,4 +1,4 @@
-package com.atmecs.testscripts2;
+package com.atmecs.shoptools.testscripts2;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -11,8 +11,8 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.atmecs.shoptools.locatorspath.LocatorsPath;
-import com.atmecs.testsuite.TestBaseClass;
-import com.atmecs.util.CommonUtilities;
+import com.atmecs.shoptools.testsuite.TestBaseClass;
+import com.atmecs.shoptools.util.CommonUtilities;
 
 public class DemoqaOrderingPageBySearch extends TestBaseClass {
 

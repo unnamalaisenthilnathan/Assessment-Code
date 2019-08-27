@@ -1,4 +1,4 @@
-package com.atmecs.util;
+package com.atmecs.shoptools.util;
 
 import java.io.FileInputStream;
 import java.io.IOException;
