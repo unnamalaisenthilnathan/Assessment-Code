@@ -5,6 +5,8 @@ import java.io.FileNotFoundException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+
+import com.atmecs.shoptools.constants.ProjectPathConstants;
 public class ExcelRead {
 	
 	
@@ -35,7 +37,7 @@ static	Object[][] data;
 	for(int i=0;i<sheet.getLastRowNum();i++) {
 	for(int k=0;k<sheet.getRow(0).getLastCellNum();k++) {
 	data[i][k]=sheet.getRow(i+1).getCell(k).toString();
-	System.out.println(data[i][k]);
+	//System.out.println(data[i][k]);
 	}
 	}
 
@@ -43,7 +45,7 @@ static	Object[][] data;
 	}
 
 	public static void print() {
-		data = getData("C:\\Users\\Unnamalai.S\\git\\Assessment-Code\\Demoqa\\resources\\testdataproperties.xlsx", "testdata");
+		data = getData(ProjectPathConstants.testdata, "testdata");
 		for(int i=0; i<data.length;i++) {
 			for(int j=0;j<data[i].length;j++)
 			{
