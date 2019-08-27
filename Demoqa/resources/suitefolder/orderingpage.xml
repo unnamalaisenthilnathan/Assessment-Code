@@ -4,7 +4,7 @@
   <test name="Test">
     <classes>
       
-      <class name="com.atmecs.testscripts1.DemoqaOrderingPage"/>
+      <class name="com.atmecs.shoptools.testscripts1.DemoqaOrderingPage"/>
     </classes>
     
     

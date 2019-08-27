@@ -8,8 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
-import com.atmecs.atmecs.logreports.LogReportInformation;
 import com.atmecs.shoptools.constants.ProjectPathConstants;
+import com.atmecs.shoptools.logreports.LogReportInformation;
 import com.atmecs.shoptools.util.PropertiesUtil;
 
 

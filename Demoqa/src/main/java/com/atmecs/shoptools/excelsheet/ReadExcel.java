@@ -27,8 +27,9 @@ public static void main(String[] args) throws IOException
         String data0=sheet1.getRow(i).getCell(0).getStringCellValue();
         
         System.out.println("Test data from excel is"+data0);
+        
         }
-       
+      
 
 
 	}

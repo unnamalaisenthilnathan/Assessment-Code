@@ -9,8 +9,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import com.atmecs.atmecs.logreports.LogReportInformation;
 import com.atmecs.shoptools.locatorspath.LocatorsPath;
+import com.atmecs.shoptools.logreports.LogReportInformation;
 import com.atmecs.shoptools.testsuite.TestBaseClass;
 import com.atmecs.shoptools.util.CommonUtilities;
 

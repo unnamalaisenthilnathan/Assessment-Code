@@ -1,4 +1,4 @@
-package com.atmecs.atmecs.logreports;
+package com.atmecs.shoptools.logreports;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
