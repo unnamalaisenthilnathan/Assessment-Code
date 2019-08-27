@@ -22,7 +22,7 @@ public class DemoqaOrderingPageBySearch extends TestBaseClass {
 	public void setup() {
 
 		this.driver = invokeBrowser();
-		String baseUrl = configProps.getProperty("applicationurl");
+		String baseUrl = configprops.getProperty("applicationurl");
 		driver.get(baseUrl);
 		this.driver = windowOperation();
 	}

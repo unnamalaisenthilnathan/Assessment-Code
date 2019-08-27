@@ -19,7 +19,7 @@ public class TestBaseClass {
 	LogReportInformation log=new LogReportInformation();
 	 WebDriver driver;
      
-   public static Properties configProps = PropertiesUtil.loadProperty(ProjectPathConstants.config);
+   public static Properties configprops = PropertiesUtil.loadProperty(ProjectPathConstants.configpropsfile);
 	public static Properties locatorprops=PropertiesUtil.loadProperty(ProjectPathConstants.locators);
 	
 	
@@ -30,7 +30,7 @@ public WebDriver invokeBrowser()
 	{
 	
 	log.info("invoke");
-	    String browser = configProps.getProperty("browserName");
+	    String browser = configprops.getProperty("browserName");
 	
 	switch (BrowserType.valueOf(browser)) {
 	case CHROME:{

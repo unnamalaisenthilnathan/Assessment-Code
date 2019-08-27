@@ -9,10 +9,13 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.atmecs.shoptools.constants.ProjectPathConstants;
 import com.atmecs.shoptools.locatorspath.LocatorsPath;
 import com.atmecs.shoptools.logreports.LogReportInformation;
 import com.atmecs.shoptools.testsuite.TestBaseClass;
 import com.atmecs.shoptools.util.CommonUtilities;
+import com.atmecs.shoptools.util.ExcelReader;
+
 
 public class DemoqaOrderingPage extends TestBaseClass {
 	// String a=locatorprops.getProperty("loc_pinkdropoversizedtshirt_color");
@@ -21,10 +24,17 @@ public class DemoqaOrderingPage extends TestBaseClass {
 	LogReportInformation log = new LogReportInformation();
 	LocatorsPath path = new LocatorsPath();
 
+	//ExcelReader excel=new ExcelReader(ProjectPathConstants.testdata);
+	//String tshirtName=excel.getData(0, 0, 3);
+	
+	
+	
+	
+	
 	@BeforeTest
 	public void setup() {
 		this.driver = invokeBrowser();
-		String baseUrl = configProps.getProperty("applicationurl");
+		String baseUrl = configprops.getProperty("applicationurl");
 		driver.get(baseUrl);
 		this.driver = windowOperation();
 
@@ -35,7 +45,8 @@ public class DemoqaOrderingPage extends TestBaseClass {
 		CommonUtilities obj = new CommonUtilities();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,400)");
-		obj.click(driver, path.firstProductName);
+		  String firstProductName=path.getxpath( "loc_pinktshirt_homepage");
+		obj.click(driver, firstProductName);
 		js.executeScript("window.scrollBy(0,500)");
 		obj.click(driver, path.firstProductColor);
 		obj.click(driver, path.firstProductColorChooseAnOption);
@@ -56,8 +67,8 @@ public class DemoqaOrderingPage extends TestBaseClass {
 		js.executeScript("window.scrollBy(0,500)");
 
 		WebElement firstProductValidation = driver.findElement(By.xpath(path.firstProductValidationName));
-		String firstProductName = firstProductValidation.getText();
-		obj.verifyassert(firstProductName, path.expectedFirstProductName, "OverSized t-shirt is present in the cart ");
+		String firstProductName1 = firstProductValidation.getText();
+		obj.verifyassert(firstProductName1, path.expectedFirstProductName, "OverSized t-shirt is present in the cart");
 		WebElement secondProductValidation = driver.findElement(By.xpath(path.secondProductValidationName));
 		String secondProductName = secondProductValidation.getText();
 		obj.verifyassert(secondProductName, path.expectedSecondProductName, "Maxi dress is present in the cart ");

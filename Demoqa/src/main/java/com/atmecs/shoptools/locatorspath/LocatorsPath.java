@@ -5,8 +5,14 @@ package com.atmecs.shoptools.locatorspath;
 import com.atmecs.shoptools.testsuite.TestBaseClass;
 
 public class LocatorsPath extends TestBaseClass {
+	
+	TestBaseClass obj=new TestBaseClass();
+	public String  getxpath(String xpath)
+	{
+	 return obj.locatorprops.getProperty(xpath);
+	}
 	//ordering
-	public static String firstProductName=locatorprops.getProperty( "loc_pinktshirt_homepage");
+	
 	public static String firstProductColor=locatorprops.getProperty("loc_pinkdropoversizedtshirt_color");
 	public static String firstProductColorChooseAnOption=locatorprops.getProperty("loc_pinkdropoversizedtshirt_color_chooseanoption");
 	public static String  firstProductSize= locatorprops.getProperty("loc_pinkdropoversizedtshirt_size");  
@@ -61,4 +67,11 @@ public class LocatorsPath extends TestBaseClass {
 	public static String finalProductPriceValidationBySearch=locatorprops.getProperty("loc_granttotalprice");
 	public static String removeAnItemBySearch=locatorprops.getProperty("loc_pinkdropoversizedtshirt_removeanitem");
 	public static String removalPriceBySearch=locatorprops.getProperty("loc_afterremoval_granttotalprice");
+	
+	
+	
+	
+	
+	String secondProductValidationNameBySearch1	=getxpath("");
+	
 }
